@@ -1,0 +1,97 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  margin-left: 20rem;
+}
+.chat {
+  margin-top: 10rem;
+}
+.screen {
+  display: flex;
+  justify-content: center;
+  background: darkmagenta;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 2rem;
+}
+.gif-btn,
+.emoji-btn {
+  padding: 0.5rem;
+  width: 5rem;
+  margin: 1rem;
+  border-radius: 0.7rem;
+  border: none;
+  background: rgb(255, 0, 0);
+}
+.gif-img {
+  display: flex;
+  margin-top: 5rem;
+  width: 300px;
+  height: 300px;
+}
+.emoji {
+  position: relative;
+  top: 10rem;
+  left: -3rem;
+  font-size: 5rem;
+}
+
+.keyboard {
+  position: relative;
+  top: 45rem;
+  left: -30rem;
+  border-radius: 5px;
+  user-select: none;
+}
+
+.keyboard__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyboard__key {
+  height: 30px;
+  width: 30px;
+  margin: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+  transition: all 0.5s;
+}
+
+.keyboard__key.active {
+  background: rgba(48, 48, 48, 0.2);
+  border-radius: 15px;
+  box-shadow: none;
+}
+
+.keyboard__key:active {
+  border-radius: 15px;
+  box-shadow: none;
+}
+
+.keyboard__key:hover {
+  background: rgba(48, 48, 48, 0.2);
+}
+
+.keyboard__key_wide {
+  width: 70px;
+}
+
+.keyboard__key_extra-wide {
+  width: 100px;
+}
+
+.keyboard__key_ultra-wide {
+  width: 250px;
+}
