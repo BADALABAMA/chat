@@ -28,6 +28,6 @@ export function createGif() {
       containerElement.appendChild(imgElement);
     })
     .catch((error) => {
-      console.error('Ошибка при получении данных из Giphy API:', error);
+      console.error('invalid data from  Giphy API:', error);
     });
 }

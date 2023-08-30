@@ -2,7 +2,7 @@ import { createGif } from './public/api/api.js';
 import { keyboardFragment } from './public/Keyboard/keyboard.js';
 
 const app = document.querySelector('#app');
-export function Tag(tags = {}) {
+function Tag(tags = {}) {
   const { tag, className, id, textContent, placeholder } = tags;
 
   const element = document.createElement(tag);
